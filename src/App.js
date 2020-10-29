@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./assets/logo.png";
 import Home from "./components/Home";
 import About from "./components/About";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
           >
             <img src={logo} alt="logo" />
             <ul className="main-nav">
-              <switch>
+           
                 <Link to='/'>
                   {" "}
                   <li >Home</li>
@@ -50,20 +51,21 @@ function App() {
                   <li>About</li>
                 </Link>
 
-                <Link>
+                <Link to='/projects'>
                   {" "}
                   <li>Projects</li>
                 </Link>
-                <Link>
+                <Link to='/'>
                   {" "}
                   <li>Contact</li>
                 </Link>
-              </switch>
+            
             </ul>
-            <switch>
+            <Switch>
+            <Route path="/projects" component={Project}></Route>
               <Route path="/about" component={About}></Route>
               <Route  path="/" exact component={Home}></Route>
-            </switch>
+            </Switch>
           </motion.div>
         </Router>
       </div>
