@@ -8,7 +8,7 @@ const Home = () => {
       initial={{ x: -1000 }}
       animate={{ x: 0 }}
       transition={{
-        delay: 1.2,
+        delay: 1.4,
         type: "spring",
         stiffness: 120,
       }}

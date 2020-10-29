@@ -4,30 +4,36 @@
   margin: auto;
   ul {
     list-style-type: none;
-    li{
-        display: inline-block;
+    li {
+      display: inline-block;
     }
   }
 }
 
-h3{
-    font-size: 30px;
-    
-    color: white;
+h3 {
+  font-size: 30px;
+
+  color: white;
 }
 p {
-    color: rgba(255, 255, 255, 0.541);
+  color: rgba(255, 255, 255, 0.541);
 }
 
-.card{
-    background-color:rgb(70, 72, 64); 
-    padding: 10px;
-    border-radius: 10px;
-    width: 250px;
-    margin: 10px
+.card {
+  background-color: rgb(70, 72, 64);
+  padding: 10px;
+  border-radius: 10px;
+  p{
+      margin-top: 15px;
+  }
 }
 
-.container{
-    display: flex;
-    justify-content: space-evenly;
+.container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px,auto) ;
+ 
 }
+
